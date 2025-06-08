@@ -14,25 +14,22 @@
     }
 
     header {
-      background-color: #b71c1c;
+      background-color: #2e7d32;
       color: white;
-      padding: 50px 20px;
+      padding: 40px 20px;
       text-align: center;
-      background-image: url('https://images.unsplash.com/photo-1597633801904-d8c1f844f7ba?auto=format&fit=crop&w=1470&q=80');
-      background-size: cover;
-      background-position: center;
     }
 
     header h1 {
       font-size: 2.5rem;
-      background-color: rgba(0,0,0,0.5);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
     }
 
     nav {
-      background: #880e4f;
+      background: #1b5e20;
       display: flex;
       justify-content: center;
       padding: 10px;
@@ -70,7 +67,7 @@
     }
 
     .section h2 {
-      color: #b71c1c;
+      color: #2e7d32;
       margin-bottom: 20px;
     }
 
@@ -103,8 +100,34 @@
       padding: 0 10px 15px;
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .review {
+      background: #f1f8e9;
+      padding: 20px;
+      border-left: 5px solid #66bb6a;
+      border-radius: 8px;
+    }
+
     footer {
-      background: #212121;
+      background: #1b5e20;
       color: white;
       text-align: center;
       padding: 30px 20px;
@@ -123,7 +146,7 @@
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 1.8em; }
+      header h1 { font-size: 1.8em; flex-direction: column; }
       .hero h2 { font-size: 1.6em; }
     }
   </style>
@@ -131,13 +154,15 @@
 <body>
 
   <header>
-    <h1>Fowler Productions Ltd</h1>
+    <h1>⚙️ Fowler Productions Ltd</h1>
     <p>Driven by Passion. Built on Purpose.</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -147,7 +172,7 @@
 
   <section class="section" id="about">
     <h2>About Us</h2>
-    <p>Fowler Productions Ltd is a dynamic and growing Ugandan company with ventures in printing, agriculture, school book supply, transport, and real estate. We are committed to providing reliable, value-driven services across rural and urban communities.</p>
+    <p>Fowler Productions Ltd is a dynamic Ugandan company involved in printing, agriculture, school books, transport, and real estate. We serve communities with high standards and reliable service delivery.</p>
   </section>
 
   <section class="section" id="services">
@@ -156,32 +181,56 @@
       <div class="card">
         <img src="https://images.unsplash.com/photo-1581090700227-1e8a5795d74a?auto=format&fit=crop&w=800&q=60" alt="Printing">
         <h3>Printing & Stationery</h3>
-        <p>Customized printing for schools, churches, and small businesses with professional quality.</p>
+        <p>Custom print solutions for schools and businesses.</p>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1607865165813-6a5edba4e49b?auto=format&fit=crop&w=800&q=60" alt="Maize Farming">
         <h3>Agriculture</h3>
-        <p>Supplying produce and running 7 acres of commercial maize farming to feed Uganda.</p>
+        <p>Supplying produce and managing 7 acres of maize farming.</p>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1577873992821-5c55b5792707?auto=format&fit=crop&w=800&q=60" alt="School Books">
         <h3>School Book Supply</h3>
-        <p>Timely delivery of branded, curriculum-aligned books to schools at the start of each term.</p>
+        <p>Curriculum-based, branded book delivery every term.</p>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1600481174210-88a64f3fb9c2?auto=format&fit=crop&w=800&q=60" alt="Real Estate">
         <h3>Real Estate</h3>
-        <p>Quality affordable rentals on the ground and first floor for working families and students.</p>
+        <p>Affordable ground and first-floor rental units.</p>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1612011990922-8a3124ab0f3f?auto=format&fit=crop&w=800&q=60" alt="Transport">
         <h3>Transport</h3>
-        <p>Using our Toyota Premio for professional delivery and transport services within Uganda.</p>
+        <p>Transport services using our Toyota Premio.</p>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1608231387042-66d1771b7b9b?auto=format&fit=crop&w=800&q=60" alt="Piggery">
-        <h3>Piggery (Coming Soon)</h3>
-        <p>Affordable pork supply through a planned modern piggery project. Stay tuned!</p>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1602524207833-e8652a56b3f0?auto=format&fit=crop&w=800&q=60" alt="Farm">
+      <img src="https://images.unsplash.com/photo-1598887142489-8f3d40208b25?auto=format&fit=crop&w=800&q=60" alt="Printing">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Books">
+      <img src="https://images.unsplash.com/photo-1622219890656-e2843fbc4445?auto=format&fit=crop&w=800&q=60" alt="Rental">
+      <img src="https://images.unsplash.com/photo-1581349482228-52ae2b6d80db?auto=format&fit=crop&w=800&q=60" alt="Vehicle">
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      <div class="review">
+        <p>“Fowler Productions delivered our school books on time with amazing quality. We’re very satisfied.”</p>
+        <strong>– Headteacher, Green Leaf Academy</strong>
+      </div>
+      <div class="review">
+        <p>“The printing service was affordable and reliable. Highly recommend them for any event materials.”</p>
+        <strong>– Sarah, Church Administrator</strong>
+      </div>
+      <div class="review">
+        <p>“Their maize supply has been consistent and fresh. They’ve helped improve our food program.”</p>
+        <strong>– James, Community Farmer</strong>
       </div>
     </div>
   </section>
@@ -204,4 +253,4 @@
   </div>
 
 </body>
-        </html>
+          </html>
