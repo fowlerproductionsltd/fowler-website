@@ -41,6 +41,17 @@
       margin: 20px;
       border-radius: 8px;
     }
+    .quotes {
+      background: #d7e8dd;
+      margin: 20px;
+      padding: 20px;
+      font-style: italic;
+      border-left: 5px solid #0f3c4b;
+      border-radius: 5px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .section {
       padding: 30px;
       background: #e2f0ea;
@@ -65,7 +76,43 @@
       width: 100%;
       margin-top: 40px;
     }
+    /* Gallery styles */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    /* Social media styles */
+    .social-media {
+      text-align: center;
+      margin: 10px 0 40px 0;
+    }
+    .social-media a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0f3c4b;
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+    .social-media a:hover {
+      color: #09506d;
+    }
   </style>
+  <!-- Font Awesome CDN for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -76,12 +123,19 @@
   <nav>
     <a href="#about">About Us</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
     <h2>Welcome to Fowler Productions Ltd</h2>
     <p>We are a multi-sector Ugandan company delivering value in printing, agriculture, real estate, and transport.</p>
+  </section>
+
+  <section class="quotes">
+    <p>“Quality is not an act, it is a habit.” – Aristotle</p>
+    <p>“Great things in business are never done by one person. They’re done by a team of people.” – Steve Jobs</p>
+    <p>“Success usually comes to those who are too busy to be looking for it.” – Henry David Thoreau</p>
   </section>
 
   <section class="section" id="about">
@@ -105,14 +159,33 @@
     </ul>
   </section>
 
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Printing Press" />
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Agricultural Farm" />
+      <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=400&q=80" alt="School Books" />
+      <img src="https://images.unsplash.com/photo-1560184897-9ac3725f9b7c?auto=format&fit=crop&w=400&q=80" alt="Real Estate Building" />
+      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="Transport Vehicle" />
+      <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=400&q=80" alt="Pig Farm" />
+    </div>
+  </section>
+
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> +256706349208 / +256700715713</p>
     <p><strong>Email:</strong> fowlerproductinltd@gmail.com</p>
+    <div class="social-media">
+      <a href="https://facebook.com/fowlerproductions" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/fowlerproductions" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://instagram.com/fowlerproductions" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://linkedin.com/company/fowlerproductions" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/256706349208" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp-square"></i></a>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Fowler Productions Ltd. All rights reserved.</p>
   </footer>
 </body>
-</html>
+  </html>
