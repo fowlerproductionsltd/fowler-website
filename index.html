@@ -2,107 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fowler Productions Ltd</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
-    /* (Styles remain the same) */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0f3c4b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #09506d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 40px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 30px;
+      background: #e2f0ea;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    footer {
+      background: #0f3c4b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>⚙️ Fowler Productions Ltd</h1>
-    <p>Driven by Passion. Built on Purpose.</p>
+    <h1>Fowler Productions Ltd</h1>
+    <p>Driven by Passion, Built on Purpose.</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
+    <a href="#about">About Us</a>
     <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
-    <h2>Empowering Uganda through Smart Solutions</h2>
+    <h2>Welcome to Fowler Productions Ltd</h2>
+    <p>We are a multi-sector Ugandan company delivering value in printing, agriculture, real estate, and transport.</p>
   </section>
 
   <section class="section" id="about">
     <h2>About Us</h2>
-    <p>Fowler Productions Ltd is a dynamic Ugandan company involved in printing, agriculture, school books, and real estate. We serve communities with high standards and reliable service delivery.</p>
+    <p>
+      Fowler Productions Ltd is a dynamic Ugandan company focused on creating practical, impactful solutions across diverse sectors.
+      Our work spans printing, stationery, agricultural produce, school books, real estate, and transport.
+      We aim to serve communities, schools, and businesses with reliability and purpose-driven innovation.
+    </p>
   </section>
 
   <section class="section" id="services">
     <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e8a5795d74a?auto=format&fit=crop&w=800&q=60" alt="Printing">
-        <h3>Printing & Stationery</h3>
-        <p>Custom print solutions for schools and businesses.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1607865165813-6a5edba4e49b?auto=format&fit=crop&w=800&q=60" alt="Maize Farming">
-        <h3>Agriculture</h3>
-        <p>Supplying produce and managing 7 acres of maize farming.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1577873992821-5c55b5792707?auto=format&fit=crop&w=800&q=60" alt="School Books">
-        <h3>School Book Supply</h3>
-        <p>Curriculum-based, branded book delivery every term.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600481174210-88a64f3fb9c2?auto=format&fit=crop&w=800&q=60" alt="Real Estate">
-        <h3>Real Estate</h3>
-        <p>Affordable ground and first-floor rental units.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1602524207833-e8652a56b3f0?auto=format&fit=crop&w=800&q=60" alt="Farm">
-      <img src="https://images.unsplash.com/photo-1598887142489-8f3d40208b25?auto=format&fit=crop&w=800&q=60" alt="Printing">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Books">
-      <img src="https://images.unsplash.com/photo-1622219890656-e2843fbc4445?auto=format&fit=crop&w=800&q=60" alt="Rental">
-    </div>
-  </section>
-
-  <section class="section" id="reviews">
-    <h2>Customer Reviews</h2>
-    <div class="reviews">
-      <div class="review">
-        <p>“Fowler Productions delivered our school books on time with amazing quality. We’re very satisfied.”</p>
-        <strong>– Headteacher, Green Leaf Academy</strong>
-      </div>
-      <div class="review">
-        <p>“The printing service was affordable and reliable. Highly recommend them for any event materials.”</p>
-        <strong>– Sarah, Church Administrator</strong>
-      </div>
-      <div class="review">
-        <p>“Their maize supply has been consistent and fresh. They’ve helped improve our food program.”</p>
-        <strong>– James, Community Farmer</strong>
-      </div>
-    </div>
+    <ul>
+      <li><strong>Printing & Stationery:</strong> High-quality print materials for schools and businesses.</li>
+      <li><strong>Agriculture:</strong> Supplying fresh produce and large-scale maize farming on 7 acres.</li>
+      <li><strong>School Book Supply:</strong> Customized books delivered at the start of each term.</li>
+      <li><strong>Real Estate:</strong> Affordable rental units on ground and first floor.</li>
+      <li><strong>Transport:</strong> Personal car (Toyota Premio) used for logistics.</li>
+      <li><strong>Upcoming:</strong> Modern piggery project to boost agro-enterprise.</li>
+    </ul>
   </section>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <p><strong>Email:</strong> <a href="mailto:fowlerproductinltd@gmail.com">fowlerproductinltd@gmail.com</a></p>
-    <p><strong>Phone:</strong> +256 706 349208 / +256 700 715713</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/256706349208" target="_blank">Chat Now</a></p>
+    <p><strong>Phone:</strong> +256706349208 / +256700715713</p>
+    <p><strong>Email:</strong> fowlerproductinltd@gmail.com</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Fowler Productions Ltd. All rights reserved.</p>
   </footer>
-
-  <div class="whatsapp-float">
-    <a href="https://wa.me/256706349208" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="Chat on WhatsApp">
-    </a>
-  </div>
-
 </body>
-        </html>
+</html>
