@@ -20,9 +20,9 @@
       text-align: center;
     }
 
-    header h1 {
-      margin: 10px 0;
-      font-size: 3em;
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
     }
 
     nav {
@@ -73,11 +73,50 @@
       padding-left: 20px;
     }
 
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta a {
+      background: #d32f2f;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
+
+    .social img {
+      width: 30px;
+      height: 30px;
+    }
+
     footer {
       background: #212121;
       color: white;
       text-align: center;
       padding: 30px 20px;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
     }
 
     @media (max-width: 768px) {
@@ -89,6 +128,7 @@
 <body>
 
   <header>
+    <img src="https://via.placeholder.com/80x80.png?text=F" alt="Fowler Logo">
     <h1>Fowler Productions Ltd</h1>
     <p>Driven by Passion. Built on Purpose.</p>
   </header>
@@ -118,17 +158,33 @@
       <li><strong>Transport:</strong> Toyota Premio for local business and delivery services.</li>
       <li><strong>Piggery (Coming Soon):</strong> Affordable pork production & supply.</li>
     </ul>
+    <div class="cta">
+      <a href="https://wa.me/256706349208?text=Hello%20Fowler%20Productions%20Ltd!%20I%20would%20like%20a%20quote%20for%20your%20services." target="_blank">Request a Quote</a>
+    </div>
   </section>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Email:</strong> <a href="mailto:fowlerproductinltd@gmail.com">fowlerproductinltd@gmail.com</a></p>
     <p><strong>Phone:</strong> +256 706 349208 / +256 700 715713</p>
+
+    <div class="social">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Fowler Productions Ltd. All rights reserved.</p>
   </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/256706349208" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="Chat with us on WhatsApp">
+    </a>
+  </div>
 
 </body>
 </html>
