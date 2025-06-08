@@ -9,24 +9,30 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #fff;
-      color: #333;
+      background: #ffffff;
+      color: #222;
     }
 
     header {
-      background-color: #d32f2f;
+      background-color: #b71c1c;
       color: white;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1597633801904-d8c1f844f7ba?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
     }
 
-    header img {
-      width: 80px;
-      margin-bottom: 10px;
+    header h1 {
+      font-size: 2.5rem;
+      background-color: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
     }
 
     nav {
-      background: #b71c1c;
+      background: #880e4f;
       display: flex;
       justify-content: center;
       padding: 10px;
@@ -41,21 +47,20 @@
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1532634726-8b9fb99825c7?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1569396116184-d5aa45f7990b?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
       height: 60vh;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
     }
 
     .hero h2 {
-      font-size: 2.5em;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
-      border-radius: 10px;
+      font-size: 2.8em;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 12px;
     }
 
     .section {
@@ -65,38 +70,37 @@
     }
 
     .section h2 {
-      color: #d32f2f;
+      color: #b71c1c;
       margin-bottom: 20px;
     }
 
-    ul {
-      padding-left: 20px;
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
-    .cta {
-      text-align: center;
-      margin-top: 30px;
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
-    .cta a {
-      background: #d32f2f;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
 
-    .social {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      gap: 15px;
+    .card h3 {
+      margin: 0;
+      padding: 10px;
+      background: #f4f4f4;
     }
 
-    .social img {
-      width: 30px;
-      height: 30px;
+    .card p {
+      padding: 0 10px 15px;
     }
 
     footer {
@@ -106,7 +110,6 @@
       padding: 30px 20px;
     }
 
-    /* WhatsApp Floating Button */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -120,15 +123,14 @@
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 2em; }
-      .hero h2 { font-size: 1.8em; }
+      header h1 { font-size: 1.8em; }
+      .hero h2 { font-size: 1.6em; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://via.placeholder.com/80x80.png?text=F" alt="Fowler Logo">
     <h1>Fowler Productions Ltd</h1>
     <p>Driven by Passion. Built on Purpose.</p>
   </header>
@@ -140,26 +142,47 @@
   </nav>
 
   <section class="hero">
-    <h2>Innovating Uganda’s Future: Agriculture, Real Estate & Printing</h2>
+    <h2>Empowering Uganda through Smart Solutions</h2>
   </section>
 
   <section class="section" id="about">
     <h2>About Us</h2>
-    <p>Fowler Productions Ltd is a bold and diversified Ugandan company that leads in printing, agriculture, transport, and real estate. We empower communities with reliable services and purpose-driven innovation.</p>
+    <p>Fowler Productions Ltd is a dynamic and growing Ugandan company with ventures in printing, agriculture, school book supply, transport, and real estate. We are committed to providing reliable, value-driven services across rural and urban communities.</p>
   </section>
 
   <section class="section" id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li><strong>Printing & Stationery:</strong> Custom prints for schools and businesses.</li>
-      <li><strong>Agriculture:</strong> Supplying produce and running 7 acres of maize farming.</li>
-      <li><strong>School Book Supply:</strong> Branded and delivered each school term.</li>
-      <li><strong>Real Estate:</strong> Affordable, quality rentals (ground + first floor).</li>
-      <li><strong>Transport:</strong> Toyota Premio for local business and delivery services.</li>
-      <li><strong>Piggery (Coming Soon):</strong> Affordable pork production & supply.</li>
-    </ul>
-    <div class="cta">
-      <a href="https://wa.me/256706349208?text=Hello%20Fowler%20Productions%20Ltd!%20I%20would%20like%20a%20quote%20for%20your%20services." target="_blank">Request a Quote</a>
+    <div class="service-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e8a5795d74a?auto=format&fit=crop&w=800&q=60" alt="Printing">
+        <h3>Printing & Stationery</h3>
+        <p>Customized printing for schools, churches, and small businesses with professional quality.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607865165813-6a5edba4e49b?auto=format&fit=crop&w=800&q=60" alt="Maize Farming">
+        <h3>Agriculture</h3>
+        <p>Supplying produce and running 7 acres of commercial maize farming to feed Uganda.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1577873992821-5c55b5792707?auto=format&fit=crop&w=800&q=60" alt="School Books">
+        <h3>School Book Supply</h3>
+        <p>Timely delivery of branded, curriculum-aligned books to schools at the start of each term.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600481174210-88a64f3fb9c2?auto=format&fit=crop&w=800&q=60" alt="Real Estate">
+        <h3>Real Estate</h3>
+        <p>Quality affordable rentals on the ground and first floor for working families and students.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1612011990922-8a3124ab0f3f?auto=format&fit=crop&w=800&q=60" alt="Transport">
+        <h3>Transport</h3>
+        <p>Using our Toyota Premio for professional delivery and transport services within Uganda.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1608231387042-66d1771b7b9b?auto=format&fit=crop&w=800&q=60" alt="Piggery">
+        <h3>Piggery (Coming Soon)</h3>
+        <p>Affordable pork supply through a planned modern piggery project. Stay tuned!</p>
+      </div>
     </div>
   </section>
 
@@ -167,24 +190,18 @@
     <h2>Contact Us</h2>
     <p><strong>Email:</strong> <a href="mailto:fowlerproductinltd@gmail.com">fowlerproductinltd@gmail.com</a></p>
     <p><strong>Phone:</strong> +256 706 349208 / +256 700 715713</p>
-
-    <div class="social">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </div>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/256706349208" target="_blank">Chat Now</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Fowler Productions Ltd. All rights reserved.</p>
   </footer>
 
-  <!-- WhatsApp Chat Button -->
   <div class="whatsapp-float">
     <a href="https://wa.me/256706349208" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="Chat with us on WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="Chat on WhatsApp">
     </a>
   </div>
 
 </body>
-</html>
+        </html>
